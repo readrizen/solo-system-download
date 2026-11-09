@@ -83,6 +83,9 @@
   ol.steps li::before { content: counter(s); position: absolute; left: 16px; top: 13px; width: 28px; height: 28px; border-radius: 50%;
     display: grid; place-items: center; font: 700 13px var(--mono); color: #fff; background: var(--neon); box-shadow: 0 0 12px var(--neon); }
   .note { color: var(--muted); font-size: 14px; margin-top: 14px; }
+  .news { max-width: 760px; margin: 0 auto; }
+  .news ul { margin: 10px 0 14px; padding-left: 20px; color: var(--ink); }
+  .news li { margin: 6px 0; }
   .about { text-align: center; color: var(--muted); max-width: 760px; margin: 0 auto; font-size: 15px; }
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   footer { border-top: 1px solid var(--line); padding: 30px 0 40px; text-align: center; color: var(--muted); font-size: 14px; }
@@ -130,6 +133,21 @@
       <div class="card"><span class="icon">🛒</span><b data-t="f4"></b><p data-t="f4t"></p></div>
       <div class="card"><span class="icon">🏆</span><b data-t="f5"></b><p data-t="f5t"></p></div>
       <div class="card"><span class="icon">🔄</span><b data-t="f6"></b><p data-t="f6t"></p></div>
+      <div class="card"><span class="icon">👹</span><b data-t="f7"></b><p data-t="f7t"></p></div>
+      <div class="card"><span class="icon">⭐</span><b data-t="f8"></b><p data-t="f8t"></p></div>
+      <div class="card"><span class="icon">📊</span><b data-t="f9"></b><p data-t="f9t"></p></div>
+      <div class="card"><span class="icon">🧩</span><b data-t="f10"></b><p data-t="f10t"></p></div>
+      <div class="card"><span class="icon">📤</span><b data-t="f11"></b><p data-t="f11t"></p></div>
+      <div class="card"><span class="icon">⚡</span><b data-t="f12"></b><p data-t="f12t"></p></div>
+    </div>
+  </section>
+
+  <section id="new">
+    <h2 data-t="new"></h2>
+    <div class="card news">
+      <b data-t="newv"></b>
+      <ul><li data-t="n1"></li><li data-t="n2"></li><li data-t="n3"></li><li data-t="n4"></li><li data-t="n5"></li><li data-t="n6"></li><li data-t="n7"></li></ul>
+      <a href="https://github.com/readrizen/solo-system-download/releases" data-t="allv"></a>
     </div>
   </section>
 
@@ -138,10 +156,10 @@
   <section>
     <h2 data-t="screens"></h2>
     <div class="gallery">
+      <img src="img/progress.png" alt="Progress page with calendar, daily EXP and stat growth" loading="lazy">
+      <img src="img/achievements.png" alt="Achievements and the weekly boss" loading="lazy">
       <img src="img/quests.png" alt="Daily quests" loading="lazy">
       <img src="img/shop.png" alt="Shop" loading="lazy">
-      <img src="img/log.png" alt="System log" loading="lazy">
-      <img src="img/settings.png" alt="Settings" loading="lazy">
     </div>
   </section>
 
@@ -190,6 +208,28 @@ const T = {
     upd: 'Yangilanishlar', updt: 'Sozlamalar → Yangilanish. Yangi versiya chiqqanda YANGILASH tugmasi paydo bo\'ladi.',
     uninst: 'O\'chirish', uninstt: 'Windows Sozlamalar → Ilovalar → Solo System → O\'chirish. Progressni saqlab qolish yoki o\'chirishni o\'zingiz tanlaysiz.',
     privacy: 'Maxfiylik', privacyt: 'Progressingiz faqat kompyuteringizda saqlanadi. Reytingda faqat ism, rank, daraja va gold ko\'rinadi. E-mail hech qachon ko\'rsatilmaydi.',
+    f7: 'Haftalik boss',
+    f7t: 'Bir haftada 5 kunni to\'liq bajaring va +200 EXP, +150 gold oling.',
+    f8: '17 ta yutuq',
+    f8t: 'Streak, daraja, statlar va bosslar uchun System yutuq beradi.',
+    f9: 'Natijalar sahifasi',
+    f9t: '35 kunlik kalendar, kunlik EXP grafigi va har bir statning o\'sishi.',
+    f10: 'Tayyor quest to\'plamlari',
+    f10t: 'Muvozanat, Sport, Talaba, Erta turish: bir bosishda boshlang.',
+    f11: 'Natijani ulashish',
+    f11t: 'Darajangiz va statlaringiz bilan chiroyli rasm yasab, do\'stlaringizga yuboring.',
+    f12: 'Original intro',
+    f12t: 'O\'ziga xos fon musiqa va chaqmoqli 3D uyg\'onish sahnasi.',
+    new: 'YANGILIKLAR',
+    newv: '1.2.1 VERSIYADA NIMA O\'ZGARDI',
+    n1: 'Yangi "Natijalar" sahifasi: kalendar, kunlik EXP, statlar o\'sishi va umumiy natijalar.',
+    n2: 'Haftalik boss: 5 kunni bajaring va +200 EXP, +150 gold oling.',
+    n3: '17 ta yutuq, har biri ochilganda System xabar beradi.',
+    n4: 'Quest muharririda 4 ta tayyor ro\'yxat.',
+    n5: 'ULASHISH tugmasi: natijangizni rasm qilib saqlang.',
+    n6: 'Intro uchun original fon musiqa, 3D sahnaga chaqmoq va yer titrashi qo\'shildi.',
+    n7: 'Sozlamalardan intro video va musiqa yuklash tugmalari olib tashlandi.',
+    allv: 'Barcha versiyalar',
     about: 'Solo System - Solo Leveling\'dan ilhomlangan bepul kundalik quest ilovasi va odat kuzatuvchisi (Windows). Bu mustaqil loyiha, rasmiy Solo Leveling asarlari va o\'yinlariga aloqasi yo\'q.',
     dev: 'DASTURCHI: ODILBEK', contact: 'Savol yoki xato topsangiz:', rights: 'Barcha huquqlar himoyalangan.',
     latest: 'Oxirgi versiya v{v} · Windows 10 / 11 (64-bit) · bepul',
@@ -213,6 +253,28 @@ const T = {
     upd: 'Updates', updt: 'Settings → Updates. When a new version is out, an UPDATE button appears.',
     uninst: 'Uninstall', uninstt: 'Windows Settings → Apps → Solo System → Uninstall. You choose whether to keep or delete your progress.',
     privacy: 'Privacy', privacyt: 'Your progress stays on your computer. The leaderboard shows only your name, rank, level and gold - never your e-mail.',
+    f7: 'Weekly boss',
+    f7t: 'Clear 5 days in one week to earn +200 EXP and +150 gold.',
+    f8: '17 achievements',
+    f8t: 'The System rewards streaks, levels, stats and boss wins.',
+    f9: 'Progress page',
+    f9t: 'A 35-day calendar, daily EXP chart and the growth of every stat.',
+    f10: 'Ready-made quest packs',
+    f10t: 'Balanced, Sport, Student, Early riser: start with one click.',
+    f11: 'Share your results',
+    f11t: 'Make a picture with your level and stats and send it to friends.',
+    f12: 'Original intro',
+    f12t: 'Its own background music and a 3D awakening scene with lightning.',
+    new: 'WHAT\'S NEW',
+    newv: 'WHAT CHANGED IN VERSION 1.2.1',
+    n1: 'New Progress page: calendar, daily EXP, stat growth and your totals.',
+    n2: 'Weekly boss: clear 5 days for +200 EXP and +150 gold.',
+    n3: '17 achievements, each announced by the System.',
+    n4: '4 ready-made quest lists in the quest editor.',
+    n5: 'SHARE button: save your results as a picture.',
+    n6: 'Original intro music, plus lightning and a trembling ground in the 3D scene.',
+    n7: 'Removed the intro video and music upload buttons from Settings.',
+    allv: 'All versions',
     about: 'Solo System is a free, Solo Leveling inspired daily quest app and gamified habit tracker for Windows. It is an independent fan-made project, not affiliated with the official Solo Leveling series or games.',
     dev: 'DEVELOPER: ODILBEK', contact: 'Questions or bugs:', rights: 'All rights reserved.',
     latest: 'Latest version v{v} · Windows 10 / 11 (64-bit) · free',
@@ -236,6 +298,28 @@ const T = {
     upd: 'Обновления', updt: 'Настройки → Обновления. Когда выйдет новая версия, появится кнопка ОБНОВИТЬ.',
     uninst: 'Удаление', uninstt: 'Параметры Windows → Приложения → Solo System → Удалить. Прогресс можно сохранить или удалить.',
     privacy: 'Конфиденциальность', privacyt: 'Прогресс хранится только на вашем компьютере. В рейтинге видны только имя, ранг, уровень и золото - e-mail никогда.',
+    f7: 'Недельный босс',
+    f7t: 'Выполните 5 дней за неделю и получите +200 EXP и +150 золота.',
+    f8: '17 достижений',
+    f8t: 'Система награждает за серии, уровни, статы и победы над боссами.',
+    f9: 'Страница прогресса',
+    f9t: 'Календарь на 35 дней, график EXP и рост каждого стата.',
+    f10: 'Готовые наборы квестов',
+    f10t: 'Баланс, Спорт, Студент, Ранний подъём: начните одним нажатием.',
+    f11: 'Делитесь результатами',
+    f11t: 'Создайте картинку с уровнем и статами и отправьте друзьям.',
+    f12: 'Оригинальное вступление',
+    f12t: 'Своя фоновая музыка и 3D-сцена пробуждения с молниями.',
+    new: 'ЧТО НОВОГО',
+    newv: 'ЧТО ИЗМЕНИЛОСЬ В ВЕРСИИ 1.2.1',
+    n1: 'Новая страница «Прогресс»: календарь, EXP за день, рост статов и итоги.',
+    n2: 'Недельный босс: выполните 5 дней и получите +200 EXP и +150 золота.',
+    n3: '17 достижений, о каждом сообщает Система.',
+    n4: '4 готовых списка в редакторе квестов.',
+    n5: 'Кнопка ПОДЕЛИТЬСЯ: сохраните результаты картинкой.',
+    n6: 'Оригинальная музыка вступления, молнии и дрожь земли в 3D-сцене.',
+    n7: 'Из настроек убраны кнопки загрузки видео и музыки вступления.',
+    allv: 'Все версии',
     about: 'Solo System - бесплатное приложение с ежедневными квестами и трекер привычек для Windows, вдохновлённое Solo Leveling. Это независимый проект, не связанный с официальными произведениями и играми Solo Leveling.',
     dev: 'РАЗРАБОТЧИК: ODILBEK', contact: 'Вопросы и ошибки:', rights: 'Все права защищены.',
     latest: 'Последняя версия v{v} · Windows 10 / 11 (64-bit) · бесплатно',
