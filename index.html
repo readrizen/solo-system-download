@@ -3,8 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Solo System</title>
-<meta name="description" content="Solo System - turn your daily habits into quests. Level up, grow 7 life stats, compete on the leaderboard.">
+<title>Solo System - Solo Leveling style daily quest app and habit tracker for Windows</title>
+<meta name="description" content="Free Solo Leveling inspired daily quest app for Windows. Turn habits into quests, level up, grow 7 life stats, beat weekly bosses and compete on the leaderboard. Kundalik quest ilovasi.">
+<meta name="keywords" content="solo leveling app, solo leveling daily quest app, solo system app, real life leveling app, gamified habit tracker, daily quest app windows, kundalik quest ilovasi, odat ilovasi">
+<link rel="canonical" href="https://readrizen.github.io/solo-system-download/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solo System">
+<meta property="og:title" content="Solo System - Solo Leveling style daily quest app and habit tracker for Windows">
+<meta property="og:description" content="Free Solo Leveling inspired daily quest app for Windows. Turn habits into quests, level up, grow 7 life stats, beat weekly bosses and compete on the leaderboard. Kundalik quest ilovasi.">
+<meta property="og:url" content="https://readrizen.github.io/solo-system-download/">
+<meta property="og:image" content="https://readrizen.github.io/solo-system-download/img/status.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solo System - Solo Leveling style daily quest app and habit tracker for Windows">
+<meta name="twitter:description" content="Free Solo Leveling inspired daily quest app for Windows. Turn habits into quests, level up, grow 7 life stats, beat weekly bosses and compete on the leaderboard. Kundalik quest ilovasi.">
+<meta name="twitter:image" content="https://readrizen.github.io/solo-system-download/img/status.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Solo System",
+  "operatingSystem": "Windows 10, Windows 11", "applicationCategory": "LifestyleApplication",
+  "description": "Free Solo Leveling inspired daily quest app for Windows. Turn habits into quests, level up, grow 7 life stats, beat weekly bosses and compete on the leaderboard. Kundalik quest ilovasi.", "url": "https://readrizen.github.io/solo-system-download/", "screenshot": "https://readrizen.github.io/solo-system-download/img/status.png",
+  "author": {"@type": "Person", "name": "Odilbek"},
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}
+</script>
 <link rel="icon" href="img/icon.png">
 <style>
   :root {
@@ -64,6 +83,7 @@
   ol.steps li::before { content: counter(s); position: absolute; left: 16px; top: 13px; width: 28px; height: 28px; border-radius: 50%;
     display: grid; place-items: center; font: 700 13px var(--mono); color: #fff; background: var(--neon); box-shadow: 0 0 12px var(--neon); }
   .note { color: var(--muted); font-size: 14px; margin-top: 14px; }
+  .about { text-align: center; color: var(--muted); max-width: 760px; margin: 0 auto; font-size: 15px; }
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   footer { border-top: 1px solid var(--line); padding: 30px 0 40px; text-align: center; color: var(--muted); font-size: 14px; }
   footer .dev { font: 700 12px var(--mono); letter-spacing: 0.3em; color: var(--neon-l); margin-bottom: 6px; }
@@ -89,8 +109,8 @@
   <div class="hero">
     <div>
       <div class="tag">[ SYSTEM ]</div>
-      <h1 data-t="h1"></h1>
-      <p class="lead" data-t="lead"></p>
+      <h1 data-t="h1">Level up your real life</h1>
+      <p class="lead" data-t="lead">Turn your daily habits into quests. Every finished quest gives EXP, gold and +1 to its stats.</p>
       <div class="cta">
         <a class="btn" id="download" href="https://github.com/readrizen/solo-system-download/releases/latest">
           <span>⬇</span><span data-t="download"></span></a>
@@ -112,6 +132,8 @@
       <div class="card"><span class="icon">🔄</span><b data-t="f6"></b><p data-t="f6t"></p></div>
     </div>
   </section>
+
+  <p class="about" data-t="about">Solo System is a free, Solo Leveling inspired daily quest app and gamified habit tracker for Windows. It is an independent fan-made project, not affiliated with the official Solo Leveling series or games.</p>
 
   <section>
     <h2 data-t="screens"></h2>
@@ -168,6 +190,7 @@ const T = {
     upd: 'Yangilanishlar', updt: 'Sozlamalar → Yangilanish. Yangi versiya chiqqanda YANGILASH tugmasi paydo bo\'ladi.',
     uninst: 'O\'chirish', uninstt: 'Windows Sozlamalar → Ilovalar → Solo System → O\'chirish. Progressni saqlab qolish yoki o\'chirishni o\'zingiz tanlaysiz.',
     privacy: 'Maxfiylik', privacyt: 'Progressingiz faqat kompyuteringizda saqlanadi. Reytingda faqat ism, rank, daraja va gold ko\'rinadi. E-mail hech qachon ko\'rsatilmaydi.',
+    about: 'Solo System - Solo Leveling\'dan ilhomlangan bepul kundalik quest ilovasi va odat kuzatuvchisi (Windows). Bu mustaqil loyiha, rasmiy Solo Leveling asarlari va o\'yinlariga aloqasi yo\'q.',
     dev: 'DASTURCHI: ODILBEK', contact: 'Savol yoki xato topsangiz:', rights: 'Barcha huquqlar himoyalangan.',
     latest: 'Oxirgi versiya v{v} · Windows 10 / 11 (64-bit) · bepul',
   },
@@ -190,6 +213,7 @@ const T = {
     upd: 'Updates', updt: 'Settings → Updates. When a new version is out, an UPDATE button appears.',
     uninst: 'Uninstall', uninstt: 'Windows Settings → Apps → Solo System → Uninstall. You choose whether to keep or delete your progress.',
     privacy: 'Privacy', privacyt: 'Your progress stays on your computer. The leaderboard shows only your name, rank, level and gold - never your e-mail.',
+    about: 'Solo System is a free, Solo Leveling inspired daily quest app and gamified habit tracker for Windows. It is an independent fan-made project, not affiliated with the official Solo Leveling series or games.',
     dev: 'DEVELOPER: ODILBEK', contact: 'Questions or bugs:', rights: 'All rights reserved.',
     latest: 'Latest version v{v} · Windows 10 / 11 (64-bit) · free',
   },
@@ -212,6 +236,7 @@ const T = {
     upd: 'Обновления', updt: 'Настройки → Обновления. Когда выйдет новая версия, появится кнопка ОБНОВИТЬ.',
     uninst: 'Удаление', uninstt: 'Параметры Windows → Приложения → Solo System → Удалить. Прогресс можно сохранить или удалить.',
     privacy: 'Конфиденциальность', privacyt: 'Прогресс хранится только на вашем компьютере. В рейтинге видны только имя, ранг, уровень и золото - e-mail никогда.',
+    about: 'Solo System - бесплатное приложение с ежедневными квестами и трекер привычек для Windows, вдохновлённое Solo Leveling. Это независимый проект, не связанный с официальными произведениями и играми Solo Leveling.',
     dev: 'РАЗРАБОТЧИК: ODILBEK', contact: 'Вопросы и ошибки:', rights: 'Все права защищены.',
     latest: 'Последняя версия v{v} · Windows 10 / 11 (64-bit) · бесплатно',
   },
